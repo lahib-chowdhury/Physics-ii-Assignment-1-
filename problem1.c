@@ -7,7 +7,7 @@ scanf("%d %lf %lf",&m,&angleD,&d);
 double pi=3.141592653589793;
 angleR = angleD*(pi/180);
 double Lmax = d*sin(angleR)*1000/m;
-double Lmin = 2*d*sin(angleR)*1000/(2*m+1);
+double Lmin = 2*d*sin(angleR)*1000/(2*m-1);
 
         //for maxima
 if (Lmax >=380 && Lmax<=450){
@@ -62,4 +62,5 @@ printf("Out of range\n");
 }
 
 return 0;
+
 }
